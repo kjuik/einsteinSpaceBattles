@@ -604,5 +604,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShip
       objectReference: {fileID: 0}
+    - target: {fileID: 9139607114589228586, guid: 98afa88eeec87f942889bce8017f567d,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617955603478946646, guid: 98afa88eeec87f942889bce8017f567d,
+        type: 3}
+      propertyPath: exhaustParticles
+      value: 
+      objectReference: {fileID: 4594681700460003886}
+    - target: {fileID: 7617955603478946646, guid: 98afa88eeec87f942889bce8017f567d,
+        type: 3}
+      propertyPath: particlesStrength
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139607114589228586, guid: 98afa88eeec87f942889bce8017f567d,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98afa88eeec87f942889bce8017f567d, type: 3}
+--- !u!198 &4594681700460003886 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9139607114589228586, guid: 98afa88eeec87f942889bce8017f567d,
+    type: 3}
+  m_PrefabInstance: {fileID: 4594681700460003885}
+  m_PrefabAsset: {fileID: 0}

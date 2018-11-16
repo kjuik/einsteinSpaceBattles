@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    float Speed = 5f;
-    [SerializeField]
-    Transform visuals;
+    [SerializeField] float Speed = 5f;
+    [SerializeField] Transform visuals;
+    [SerializeField] ParticleSystem exhaustParticles;
+    [SerializeField] float particlesStrength = 1f;
 
     Rigidbody cachedRigidbody;
     
@@ -25,7 +25,15 @@ public class PlayerMovement : MonoBehaviour
         ) * Speed;
 
         cachedRigidbody.AddForce(acceleration);
+        SetParticlesEmission(acceleration);
 
-        visuals.LookAt(visuals.position + acceleration);
+        transform.LookAt(visuals.position + acceleration);
+    }
+
+    private void SetParticlesEmission(Vector3 acceleration)
+    {
+        var emission = exhaustParticles.emission;
+        emission.rateOverTime = acceleration.sqrMagnitude * particlesStrength;
+
     }
 }

@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.einsteinSpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.einsteinSpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +23,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="974" />
+          <entry key="cs" value="1294" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="974" />
+          <entry key="C#" value="1294" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -47,32 +47,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <marker date="1542268102466" expanded="false" signature="6:78" ph="..." />
-                <marker date="1542268102466" expanded="true" signature="123:629" ph="{...}" />
-                <marker date="1542268102466" expanded="true" signature="266:331" ph="{...}" />
-                <marker date="1542268102466" expanded="true" signature="354:627" ph="{...}" />
+                <marker date="1542350638020" expanded="false" signature="6:78" ph="..." />
+                <marker date="1542350638020" expanded="true" signature="123:975" ph="{...}" />
+                <marker date="1542350638020" expanded="true" signature="363:428" ph="{...}" />
+                <marker date="1542350638020" expanded="true" signature="451:770" ph="{...}" />
+                <marker date="1542350638020" expanded="true" signature="831:973" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EdgeOfSpace.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="125">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
-                <marker date="1542268854278" expanded="true" signature="6:52" ph="..." />
-                <marker date="1542268854278" expanded="true" signature="94:921" ph="{...}" />
-                <marker date="1542268854278" expanded="true" signature="346:399" ph="{...}" />
-                <marker date="1542268854278" expanded="true" signature="451:509" ph="{...}" />
-                <marker date="1542268854278" expanded="true" signature="560:919" ph="{...}" />
+                <marker date="1542268942693" expanded="true" signature="6:52" ph="..." />
+                <marker date="1542268942693" expanded="true" signature="94:1035" ph="{...}" />
+                <marker date="1542268942693" expanded="true" signature="347:457" ph="{...}" />
+                <marker date="1542268942693" expanded="true" signature="509:623" ph="{...}" />
+                <marker date="1542268942693" expanded="true" signature="674:1033" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -90,9 +91,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EdgesOfSpace.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EdgeOfSpace.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +103,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="606" />
     <option name="width" value="767" />
     <option name="height" value="775" />
@@ -165,12 +166,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542266585622</updated>
-      <workItem from="1542266595618" duration="2230000" />
+      <workItem from="1542266595618" duration="3224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2230000" />
+    <option name="totallyTimeSpent" value="3224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -237,29 +238,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EdgeOfSpace.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="125">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <marker date="1542268102466" expanded="false" signature="6:78" ph="..." />
-            <marker date="1542268102466" expanded="true" signature="123:629" ph="{...}" />
-            <marker date="1542268102466" expanded="true" signature="266:331" ph="{...}" />
-            <marker date="1542268102466" expanded="true" signature="354:627" ph="{...}" />
+            <marker date="1542268942693" expanded="true" signature="6:52" ph="..." />
+            <marker date="1542268942693" expanded="true" signature="94:1035" ph="{...}" />
+            <marker date="1542268942693" expanded="true" signature="347:457" ph="{...}" />
+            <marker date="1542268942693" expanded="true" signature="509:623" ph="{...}" />
+            <marker date="1542268942693" expanded="true" signature="674:1033" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EdgeOfSpace.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="210">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <marker date="1542268854278" expanded="true" signature="6:52" ph="..." />
-            <marker date="1542268854278" expanded="true" signature="94:921" ph="{...}" />
-            <marker date="1542268854278" expanded="true" signature="346:399" ph="{...}" />
-            <marker date="1542268854278" expanded="true" signature="451:509" ph="{...}" />
-            <marker date="1542268854278" expanded="true" signature="560:919" ph="{...}" />
+            <marker date="1542350638020" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542350638020" expanded="true" signature="123:975" ph="{...}" />
+            <marker date="1542350638020" expanded="true" signature="363:428" ph="{...}" />
+            <marker date="1542350638020" expanded="true" signature="451:770" ph="{...}" />
+            <marker date="1542350638020" expanded="true" signature="831:973" ph="{...}" />
           </folding>
         </state>
       </provider>
