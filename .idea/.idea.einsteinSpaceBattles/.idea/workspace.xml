@@ -47,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="285">
+              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <marker date="1542350638020" expanded="false" signature="6:78" ph="..." />
                 <marker date="1542350638020" expanded="true" signature="123:975" ph="{...}" />
@@ -63,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EdgeOfSpace.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <marker date="1542268942693" expanded="true" signature="6:52" ph="..." />
                 <marker date="1542268942693" expanded="true" signature="94:1035" ph="{...}" />
@@ -103,7 +103,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="606" />
     <option name="width" value="767" />
     <option name="height" value="775" />
@@ -166,12 +166,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542266585622</updated>
-      <workItem from="1542266595618" duration="3224000" />
+      <workItem from="1542266595618" duration="3964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3224000" />
+    <option name="totallyTimeSpent" value="3964000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -183,7 +183,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -238,30 +238,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EdgeOfSpace.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <marker date="1542268942693" expanded="true" signature="6:52" ph="..." />
-            <marker date="1542268942693" expanded="true" signature="94:1035" ph="{...}" />
-            <marker date="1542268942693" expanded="true" signature="347:457" ph="{...}" />
-            <marker date="1542268942693" expanded="true" signature="509:623" ph="{...}" />
-            <marker date="1542268942693" expanded="true" signature="674:1033" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="285">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding>
             <marker date="1542350638020" expanded="false" signature="6:78" ph="..." />
             <marker date="1542350638020" expanded="true" signature="123:975" ph="{...}" />
             <marker date="1542350638020" expanded="true" signature="363:428" ph="{...}" />
             <marker date="1542350638020" expanded="true" signature="451:770" ph="{...}" />
             <marker date="1542350638020" expanded="true" signature="831:973" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EdgeOfSpace.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <marker date="1542268942693" expanded="true" signature="6:52" ph="..." />
+            <marker date="1542268942693" expanded="true" signature="94:1035" ph="{...}" />
+            <marker date="1542268942693" expanded="true" signature="347:457" ph="{...}" />
+            <marker date="1542268942693" expanded="true" signature="509:623" ph="{...}" />
+            <marker date="1542268942693" expanded="true" signature="674:1033" ph="{...}" />
           </folding>
         </state>
       </provider>
