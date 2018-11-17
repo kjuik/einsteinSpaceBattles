@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherEdge: {fileID: 1399465292}
-  preserveX: 0
-  preserveZ: 1
+  workInX: 1
+  workInZ: 0
 --- !u!65 &247196863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,8 +299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherEdge: {fileID: 1708629513}
-  preserveX: 1
-  preserveZ: 0
+  workInX: 0
+  workInZ: 1
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,8 +586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherEdge: {fileID: 247196862}
-  preserveX: 0
-  preserveZ: 1
+  workInX: 1
+  workInZ: 0
 --- !u!65 &1399465293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -668,6 +668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShip
       objectReference: {fileID: 0}
+    - target: {fileID: 686988468936764090, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+        type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a10bf2fe6561e5c478c7bd4c945c6858, type: 3}
 --- !u!1 &1708629511
@@ -715,8 +720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherEdge: {fileID: 476298270}
-  preserveX: 1
-  preserveZ: 0
+  workInX: 0
+  workInZ: 1
 --- !u!65 &1708629514
 BoxCollider:
   m_ObjectHideFlags: 0

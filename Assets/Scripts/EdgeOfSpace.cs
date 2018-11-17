@@ -6,32 +6,19 @@ public class EdgeOfSpace : MonoBehaviour
     [SerializeField]
     EdgeOfSpace otherEdge;
     [SerializeField]
-    bool preserveX;
+    bool workInX;
     [SerializeField]
-    bool preserveZ;
-
-    readonly List<Transform> dontSendBack = new List<Transform>();
+    bool workInZ;
     
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider subject)
     {
-        if (!dontSendBack.Contains(other.transform))
-            otherEdge.Send(other.transform);
-    }
-    
-    private void OnTriggerExit(Collider other)
-    {
-        if (dontSendBack.Contains(other.transform))
-            dontSendBack.Remove(other.transform);
-    }
-    
-    public void Send(Transform sentTransform)
-    {
-        dontSendBack.Add(sentTransform);
-        
-        sentTransform.transform.position = 
-            new Vector3(
-                preserveX ? sentTransform.transform.position.x : transform.position.x,
-                sentTransform.transform.position.y, 
-                preserveZ ? sentTransform.transform.position.z : transform.position.z);
+        subject.transform.position = new Vector3(
+            workInX && Mathf.Abs(subject.transform.position.x) > Mathf.Abs(transform.position.x) 
+                ? otherEdge.transform.position.x 
+                : subject.transform.position.x,
+            subject.transform.position.y,
+            workInZ && Mathf.Abs(subject.transform.position.z) > Mathf.Abs(transform.position.z) 
+                ? otherEdge.transform.position.z 
+                : subject.transform.position.z);
     }
 }
