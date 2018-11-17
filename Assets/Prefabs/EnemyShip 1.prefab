@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8601528256471671952
+--- !u!1001 &7752532249262877770
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 8745995703466872602, guid: 98afa88eeec87f942889bce8017f567d,
         type: 3}
       propertyPath: m_Name
-      value: PlayerShip
+      value: Ship
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98afa88eeec87f942889bce8017f567d, type: 3}
