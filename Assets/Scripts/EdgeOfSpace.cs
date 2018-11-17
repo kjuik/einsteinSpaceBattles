@@ -3,12 +3,9 @@ using UnityEngine;
 
 public class EdgeOfSpace : MonoBehaviour
 {
-    [SerializeField]
-    EdgeOfSpace otherEdge;
-    [SerializeField]
-    bool workInX;
-    [SerializeField]
-    bool workInZ;
+    [SerializeField] EdgeOfSpace otherEdge;
+    [SerializeField] bool workInX;
+    [SerializeField] bool workInZ;
     
     private void OnTriggerStay(Collider subject)
     {
