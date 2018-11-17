@@ -1,11 +1,17 @@
 using UnityEngine;
 
-public abstract class Movement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
+    
+    
     [SerializeField] float Speed = 5f;
+    [SerializeField] AnimationCurve SteeringCurve;
     [SerializeField] ParticleSystem exhaustParticles;
     [SerializeField] float particlesStrength = 1f;
 
+    protected virtual float Throttle { get; }
+    protected virtual Vector3 SteeringDirection { get; }
+    
     Rigidbody cachedRigidbody;
     
     void Awake()
@@ -15,20 +21,23 @@ public abstract class Movement : MonoBehaviour
     
     void Update()
     {
-        var acceleration = GetCurrentSteering() * Speed;
+        var throttle = Throttle;
+        cachedRigidbody.AddForce(transform.forward * Throttle * Speed);
+        SetParticlesEmission(throttle);
 
-        cachedRigidbody.AddForce(acceleration);
-        SetParticlesEmission(acceleration);
-
-        transform.LookAt(transform.position + acceleration);
+        if (SteeringDirection != Vector3.zero)
+            cachedRigidbody.AddTorque(
+                0f,
+                SteeringCurve.Evaluate(Vector3.Cross(
+                    transform.forward, SteeringDirection
+                ).y),
+                0f);
     }
 
-    protected abstract Vector3 GetCurrentSteering();
-
-    private void SetParticlesEmission(Vector3 acceleration)
+    private void SetParticlesEmission(float throttle)
     {
         var emission = exhaustParticles.emission;
-        emission.rateOverTime = acceleration.sqrMagnitude * particlesStrength;
+        emission.rateOverTime = throttle * particlesStrength;
 
     }
 }
