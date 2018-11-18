@@ -427,7 +427,7 @@ PrefabInstance:
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -557,12 +557,12 @@ PrefabInstance:
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].inSlope
-      value: 28.774704
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].outSlope
-      value: 28.774704
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -572,22 +572,22 @@ PrefabInstance:
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].time
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].inSlope
-      value: 0.17241395
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].outSlope
-      value: 0.17241395
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -597,22 +597,22 @@ PrefabInstance:
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].time
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].outWeight
-      value: 0.125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].inWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].outWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -647,12 +647,32 @@ PrefabInstance:
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].value
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: particlesStrength
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
+        type: 3}
+      propertyPath: SteeringStrength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366424399811355487, guid: 9aff2a72eb861ac44bc204fc46c79911,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366424399811355487, guid: 9aff2a72eb861ac44bc204fc46c79911,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964263451407520691, guid: 9aff2a72eb861ac44bc204fc46c79911,
+        type: 3}
+      propertyPath: Speed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aff2a72eb861ac44bc204fc46c79911, type: 3}
@@ -732,7 +752,7 @@ PrefabInstance:
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
@@ -807,47 +827,47 @@ PrefabInstance:
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].time
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].value
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].inSlope
-      value: 28.774704
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].outSlope
-      value: 28.774704
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[0].outWeight
-      value: 0.125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].inSlope
-      value: 0.17241395
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].outSlope
-      value: 0.17241395
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].inWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: SteeringCurve.m_Curve.Array.data[1].outWeight
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
@@ -878,6 +898,36 @@ PrefabInstance:
         type: 3}
       propertyPath: particlesStrength
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+        type: 3}
+      propertyPath: SteeringCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+        type: 3}
+      propertyPath: SteeringCurve.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+        type: 3}
+      propertyPath: SteeringStrength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026469564223253381, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026469564223253381, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038587159498587650, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+        type: 3}
+      propertyPath: Speed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a10bf2fe6561e5c478c7bd4c945c6858, type: 3}

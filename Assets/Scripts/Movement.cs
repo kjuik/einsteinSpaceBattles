@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    
-    
     [SerializeField] float Speed = 5f;
-    [SerializeField] AnimationCurve SteeringCurve;
+    [SerializeField] float SteeringStrength = 10;
     [SerializeField] ParticleSystem exhaustParticles;
     [SerializeField] float particlesStrength = 1f;
 
@@ -21,17 +19,12 @@ public class Movement : MonoBehaviour
     
     void Update()
     {
-        var throttle = Throttle;
-        cachedRigidbody.AddForce(transform.forward * Throttle * Speed);
-        SetParticlesEmission(throttle);
+        cachedRigidbody.velocity = Vector3.Lerp(
+            cachedRigidbody.velocity, 
+            Throttle * SteeringDirection * Speed,
+            Mathf.Min(Time.deltaTime * SteeringStrength, 1f));
 
-        if (SteeringDirection != Vector3.zero)
-            cachedRigidbody.AddTorque(
-                0f,
-                SteeringCurve.Evaluate(Vector3.Cross(
-                    transform.forward, SteeringDirection
-                ).y),
-                0f);
+        transform.forward = cachedRigidbody.velocity;
     }
 
     private void SetParticlesEmission(float throttle)
