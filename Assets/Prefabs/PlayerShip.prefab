@@ -1,18 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!198 &686988468936764090 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 9139607114589228586, guid: 98afa88eeec87f942889bce8017f567d,
-    type: 3}
-  m_PrefabInstance: {fileID: 8601528256471671952}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1026469564223253386 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8745995703466872602, guid: 98afa88eeec87f942889bce8017f567d,
     type: 3}
   m_PrefabInstance: {fileID: 8601528256471671952}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4038587159498587650
+--- !u!114 &6103503599424013780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21,12 +15,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1026469564223253386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688d207a85370824086ba3cb27e6755f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3074ca2ce0c0e1645bcd5012371c6ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  exhaustParticles: {fileID: 686988468936764090}
-  particlesStrength: 5
 --- !u!1001 &8601528256471671952
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,8 +7,8 @@ public class Movement : MonoBehaviour
     [SerializeField] ParticleSystem exhaustParticles;
     [SerializeField] float particlesStrength = 1f;
 
-    protected virtual float Throttle { get; }
-    protected virtual Vector3 SteeringDirection { get; }
+    public float Throttle { set; private get;  }
+    public Vector3 Direction { set; private get; }
     
     Rigidbody cachedRigidbody;
     
@@ -21,9 +21,11 @@ public class Movement : MonoBehaviour
     {
         cachedRigidbody.velocity = Vector3.Lerp(
             cachedRigidbody.velocity, 
-            Throttle * SteeringDirection * Speed,
+            Throttle * Direction * Speed,
             Mathf.Min(Time.deltaTime * SteeringStrength, 1f));
 
+        SetParticlesEmission(Throttle);
+        
         transform.forward = cachedRigidbody.velocity;
     }
 
@@ -31,6 +33,5 @@ public class Movement : MonoBehaviour
     {
         var emission = exhaustParticles.emission;
         emission.rateOverTime = throttle * particlesStrength;
-
     }
 }

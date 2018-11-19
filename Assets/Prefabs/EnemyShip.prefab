@@ -1,18 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!198 &1531486925837017696 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 9139607114589228586, guid: 98afa88eeec87f942889bce8017f567d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7752532249262877770}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1366424399811355472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8745995703466872602, guid: 98afa88eeec87f942889bce8017f567d,
     type: 3}
   m_PrefabInstance: {fileID: 7752532249262877770}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7964263451407520691
+--- !u!114 &2564331856763947199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21,12 +15,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1366424399811355472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9daeeb16c46c2f34f8eaa6fe3ab86191, type: 3}
+  m_Script: {fileID: 11500000, guid: e93d76969e5ad7e4f985385598809a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  exhaustParticles: {fileID: 1531486925837017696}
-  particlesStrength: 5
   Target: {fileID: 0}
 --- !u!1001 &7752532249262877770
 PrefabInstance:
@@ -95,5 +86,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyShip
       objectReference: {fileID: 0}
+    - target: {fileID: 7963040315614392722, guid: 98afa88eeec87f942889bce8017f567d,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 8668257956387346759, guid: b2ae4083034af994faf426a96112d2e2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98afa88eeec87f942889bce8017f567d, type: 3}

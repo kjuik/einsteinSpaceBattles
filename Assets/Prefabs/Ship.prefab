@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!4 &4594681700818392303 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4594681700818352145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9139607114569782532 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 490472, guid: ee25b75a5fe846546a9200c00355e509,
+    type: 3}
+  m_PrefabInstance: {fileID: 9139607114570264300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9139607114589228586 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19833030, guid: ee25b75a5fe846546a9200c00355e509,
+    type: 3}
+  m_PrefabInstance: {fileID: 9139607114570264300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &551895808772601372
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,12 +78,6 @@ Transform:
   m_Father: {fileID: 2163799543044108652}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4594681700818392303 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4594681700818352145}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8745995703466872602
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,6 +87,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2163799543044108652}
+  - component: {fileID: 8714639936115452496}
+  - component: {fileID: 7963040315614392722}
   - component: {fileID: 8745995703466872597}
   - component: {fileID: 1042666594987968356}
   m_Layer: 0
@@ -102,6 +116,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8714639936115452496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745995703466872602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92d8b198c9f46c08764fdef3941fcdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
+  SteeringStrength: 0.5
+  exhaustParticles: {fileID: 9139607114589228586}
+  particlesStrength: 50
+--- !u!114 &7963040315614392722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745995703466872602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7bf3c796cec7f34a86402ea7c0e9680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8668257956387346759, guid: d21cfacd7bbc416429428ca9691a013d,
+    type: 3}
+  shotFrequency: 2
+  delay: 2
+  muzzles:
+  - {fileID: 1514985617882564719}
+  - {fileID: 6390439618823469716}
 --- !u!54 &8745995703466872597
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -131,12 +180,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2419114, y: 1, z: 4.2877603}
   m_Center: {x: 0.07960987, y: 0, z: 0.2427504}
---- !u!4 &9139607114569782532 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 490472, guid: ee25b75a5fe846546a9200c00355e509,
-    type: 3}
-  m_PrefabInstance: {fileID: 9139607114570264300}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4594681700818352145
 PrefabInstance:
   m_ObjectHideFlags: 0
