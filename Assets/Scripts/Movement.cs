@@ -19,14 +19,17 @@ public class Movement : MonoBehaviour
     
     void Update()
     {
-        cachedRigidbody.velocity = Vector3.Lerp(
-            cachedRigidbody.velocity, 
-            Throttle * Direction * Speed,
-            Mathf.Min(Time.deltaTime * SteeringStrength, 1f));
+        if (Throttle > 0)
+        {
+            cachedRigidbody.velocity = Vector3.Lerp(
+                cachedRigidbody.velocity,
+                Throttle * Direction * Speed,
+                Mathf.Min(Time.deltaTime * SteeringStrength, 1f));
+            
+            transform.forward = cachedRigidbody.velocity;
+        }
 
         SetParticlesEmission(Throttle);
-        
-        transform.forward = cachedRigidbody.velocity;
     }
 
     private void SetParticlesEmission(float throttle)

@@ -207,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247196860}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27, y: 0, z: 0}
+  m_LocalPosition: {x: -11, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146972198}
@@ -267,7 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476298267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 17}
+  m_LocalPosition: {x: 0, y: 0, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146972198}
@@ -353,7 +353,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -432,7 +432,7 @@ PrefabInstance:
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -442,7 +442,7 @@ PrefabInstance:
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -452,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -462,7 +462,7 @@ PrefabInstance:
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.8660254
       objectReference: {fileID: 0}
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -477,7 +477,7 @@ PrefabInstance:
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 8471793415466065190, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
@@ -705,11 +705,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96dcec5850e486f84f28765f03f99b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8668257956387346759, guid: b2ae4083034af994faf426a96112d2e2,
     type: 3}
   shotFrequency: 2
   delay: 1
   muzzles: []
+  lastMuzzleIndex: 0
+  lastShotTimestamp: 0
+  <ShouldShoot>k__BackingField: 0
 --- !u!114 &1257589223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,11 +749,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96dcec5850e486f84f28765f03f99b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8668257956387346759, guid: b2ae4083034af994faf426a96112d2e2,
     type: 3}
   shotFrequency: 2
   delay: 0
   muzzles: []
+  lastMuzzleIndex: 0
+  lastShotTimestamp: 0
+  <ShouldShoot>k__BackingField: 0
 --- !u!4 &1398517989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
@@ -759,7 +813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399465290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27, y: 0, z: 0}
+  m_LocalPosition: {x: 11, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146972198}
@@ -808,7 +862,7 @@ PrefabInstance:
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
@@ -818,7 +872,7 @@ PrefabInstance:
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
@@ -828,7 +882,7 @@ PrefabInstance:
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.86602545
       objectReference: {fileID: 0}
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
@@ -838,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.49999994
       objectReference: {fileID: 0}
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
@@ -853,7 +907,7 @@ PrefabInstance:
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7591266150704567804, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
@@ -1021,11 +1075,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6979512201c47f3a011b4822594b2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8668257956387346759, guid: d21cfacd7bbc416429428ca9691a013d,
     type: 3}
   shotFrequency: 2
   delay: 1
   muzzles: []
+  lastMuzzleIndex: 0
+  lastShotTimestamp: 0
+  <ShouldShoot>k__BackingField: 0
 --- !u!114 &1477096396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,11 +1119,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6979512201c47f3a011b4822594b2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8668257956387346759, guid: d21cfacd7bbc416429428ca9691a013d,
     type: 3}
   shotFrequency: 2
   delay: 0
   muzzles: []
+  lastMuzzleIndex: 0
+  lastShotTimestamp: 0
+  <ShouldShoot>k__BackingField: 0
 --- !u!1 &1708629511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708629511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -17}
+  m_LocalPosition: {x: 0, y: 0, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146972198}
