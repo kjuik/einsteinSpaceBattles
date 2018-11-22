@@ -92,5 +92,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8668257956387346759, guid: b2ae4083034af994faf426a96112d2e2,
         type: 3}
+    - target: {fileID: 7963040315614392722, guid: 98afa88eeec87f942889bce8017f567d,
+        type: 3}
+      propertyPath: shotFrequency
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963040315614392722, guid: 98afa88eeec87f942889bce8017f567d,
+        type: 3}
+      propertyPath: delay
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98afa88eeec87f942889bce8017f567d, type: 3}

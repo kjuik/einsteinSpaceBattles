@@ -12,12 +12,18 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AbstractController.cs" t="Include" />
+          <e p="Controllers" t="Include">
+            <e p="AbstractController.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+          </e>
           <e p="EdgeOfSpace.cs" t="Include" />
-          <e p="EnemyController.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
-          <e p="PlayerController.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
+          <e p="Relativistics" t="Include">
+            <e p="Relativistics.cs" t="Include" />
+            <e p="RelativisticVisuals.cs" t="Include" />
+          </e>
           <e p="Weapon.cs" t="Include" />
         </e>
       </e>
