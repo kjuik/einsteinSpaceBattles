@@ -72,5 +72,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3308299598694626452, guid: de2595fc514bad346a1fd31d91b4d138,
+        type: 3}
+      propertyPath: explosionPrefab
+      value: 
+      objectReference: {fileID: 6978013152363887945, guid: 838622fbf5eaf674a9a68ad77ef08ec0,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de2595fc514bad346a1fd31d91b4d138, type: 3}

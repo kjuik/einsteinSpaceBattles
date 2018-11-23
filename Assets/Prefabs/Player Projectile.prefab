@@ -122,5 +122,11 @@ PrefabInstance:
       propertyPath: ColorModule.gradient.maxGradient.m_NumColorKeys
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3308299598694626452, guid: de2595fc514bad346a1fd31d91b4d138,
+        type: 3}
+      propertyPath: explosionPrefab
+      value: 
+      objectReference: {fileID: 5068982884820439544, guid: 68b52a9934bb3024e8052b1809671573,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de2595fc514bad346a1fd31d91b4d138, type: 3}

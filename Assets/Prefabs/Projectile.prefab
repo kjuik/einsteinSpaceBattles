@@ -56,6 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3308299598694626455}
   - component: {fileID: 3308299598694626452}
+  - component: {fileID: 1554783070585259408}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -91,6 +92,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.4
+  explosionPrefab: {fileID: 0}
+--- !u!135 &1554783070585259408
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308299598694626453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8971771849849350418 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 184992, guid: 552dedd57e2ab8a4c92f5ce96a7ab50e,
@@ -116,7 +131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 483194, guid: 552dedd57e2ab8a4c92f5ce96a7ab50e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 483194, guid: 552dedd57e2ab8a4c92f5ce96a7ab50e, type: 3}
       propertyPath: m_LocalPosition.y
