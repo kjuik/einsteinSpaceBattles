@@ -21,6 +21,8 @@
           <e p="Movement.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="Relativistics" t="Include">
+            <e p="CameraOverlayEffect.cs" t="Include" />
+            <e p="PerceptionOverlay.shader" t="Include" />
             <e p="PlayerPerspectiveCamera.cs" t="Include" />
             <e p="Relativistics.cs" t="Include" />
             <e p="RelativisticVisuals.cs" t="Include" />
