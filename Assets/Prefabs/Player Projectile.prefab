@@ -62,11 +62,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3308299598694626453, guid: de2595fc514bad346a1fd31d91b4d138,
-        type: 3}
-      propertyPath: m_Name
-      value: Player Projectile
-      objectReference: {fileID: 0}
     - target: {fileID: 8971771849867404562, guid: de2595fc514bad346a1fd31d91b4d138,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.r
@@ -128,5 +123,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5068982884820439544, guid: 68b52a9934bb3024e8052b1809671573,
         type: 3}
+    - target: {fileID: 2884374091844679233, guid: de2595fc514bad346a1fd31d91b4d138,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308299598694626453, guid: de2595fc514bad346a1fd31d91b4d138,
+        type: 3}
+      propertyPath: m_Name
+      value: Player Projectile
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de2595fc514bad346a1fd31d91b4d138, type: 3}

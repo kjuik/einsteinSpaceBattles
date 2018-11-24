@@ -9,7 +9,7 @@ public abstract class AbstractController : MonoBehaviour
     protected abstract float Throttle { get; }
     protected abstract Vector3 Direction { get; }
     
-    void Awake()
+    protected virtual void Awake()
     {
         weapon = GetComponent<Weapon>();
         movement = GetComponent<Movement>();

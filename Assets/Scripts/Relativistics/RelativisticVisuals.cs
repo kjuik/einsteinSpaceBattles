@@ -33,9 +33,21 @@ public class RelativisticVisuals : MonoBehaviour
                 Visuals.transform.position, 
                 Visuals.transform.rotation
             );
-            newAfterImage.gameObject.layer = LayerMask.NameToLayer(Relativistics.PerceiverLayerNames[i]);
+            SetLayer(
+                newAfterImage.transform, 
+                LayerMask.NameToLayer(Relativistics.PerceiverLayerNames[i])
+            );
             
             AfterImages.Add(newAfterImage);
+        }
+    }
+
+    private void SetLayer(Transform o, int layer)
+    {
+        o.gameObject.layer = layer;
+        foreach (Transform child in o.transform)
+        {
+            SetLayer(child, layer);
         }
     }
 
@@ -53,16 +65,49 @@ public class RelativisticVisuals : MonoBehaviour
             var lightDelay = distance / Relativistics.C;
             var perceivedTimestamp = Time.time - lightDelay;
 
-            for (var j = History.Count-1; j > 0; j--)
+            for (var j = History.Count-1; j >= 0; j--)
             {
-                if (History[j].Timestamp < perceivedTimestamp || j == 0)
+                if (History[j].Timestamp < perceivedTimestamp)
                 {
+                    ToggleRenderers(AfterImages[i], true);
                     AfterImages[i].transform.position = History[j].Position;
                     AfterImages[i].transform.rotation = History[j].Rotation;
                     break;
                 }
+                else if (j == 0)
+                {
+                    ToggleRenderers(AfterImages[i], false);
+                }
             }
         }
+    }
+
+    private void ToggleRenderers(GameObject afterImage, bool on)
+    {
+        afterImage.GetComponent<Renderer>().enabled = on;
+        foreach (var renderer in afterImage.GetComponentsInChildren<Renderer>())
+        {
+            renderer.enabled = on;
+        }
+        
+        foreach (var particles in 
+            afterImage.GetComponentsInChildren<ParticleSystem>()
+            .Concat(new List<ParticleSystem> { afterImage.GetComponent<ParticleSystem>() }))
+        {
+            if (particles == null)
+                continue;
+            
+            if (particles.isPlaying && !on)
+                particles.Pause();
+            
+            if (!particles.isPlaying && on)
+                particles.Play();            
+        }
+    }
+
+    public GameObject GetAfterImageByLayerIndex(int layerIndex)
+    {
+        return AfterImages[layerIndex];
     }
     
     void OnDestroy()
