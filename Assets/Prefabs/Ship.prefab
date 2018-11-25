@@ -1,11 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!198 &9139607114589228586 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19833030, guid: ee25b75a5fe846546a9200c00355e509,
-    type: 3}
-  m_PrefabInstance: {fileID: 9139607114570264300}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &551895808772601372
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,10 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92d8b198c9f46c08764fdef3941fcdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.2
+  Speed: 2.5
   SteeringStrength: 0.5
   exhaustParticles: {fileID: 9139607114589228586}
-  particlesStrength: 50
+  particlesStrength: 10
 --- !u!114 &7963040315614392722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +173,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!198 &9139607114589228586 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19833030, guid: ee25b75a5fe846546a9200c00355e509,
+    type: 3}
+  m_PrefabInstance: {fileID: 9139607114570264300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9196804997896311020
 GameObject:
   m_ObjectHideFlags: 0

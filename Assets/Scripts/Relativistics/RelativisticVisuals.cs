@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -17,6 +16,9 @@ public class RelativisticVisuals : MonoBehaviour
 
     private readonly List<GameObject> AfterImages = new List<GameObject>();
     private readonly List<HistoricalState> History = new List<HistoricalState>();
+
+    private bool isDestroyed;
+    private float destructionTimestamp;
     
     void Awake()
     {
@@ -54,35 +56,51 @@ public class RelativisticVisuals : MonoBehaviour
 
     void Update()
     {
-        History.Add(new HistoricalState() {
-            Timestamp = Time.time, 
-            Position = Visuals.transform.position,
-            Rotation = Visuals.transform.rotation
-        });
-        
+        if (!isDestroyed)
+        {
+            History.Add(new HistoricalState()
+            {
+                Timestamp = Time.time,
+                Position = Visuals.transform.position,
+                Rotation = Visuals.transform.rotation
+            });
+        }
+
         for (var i = 0; i < Perceivers.Count; i++)
         {
             var distance = Vector3.Distance(Visuals.transform.position, Perceivers[i].position);
             var lightDelay = distance / Relativistics.C;
             var perceivedTimestamp = Time.time - lightDelay;
 
-            for (var j = History.Count-1; j >= 0; j--)
+            if (isDestroyed && destructionTimestamp < perceivedTimestamp)
+                AfterImages[i].SetActive(false);
+            else if (AfterImages[i] != null)
             {
-                if (History[j].Timestamp < perceivedTimestamp)
+                for (var j = History.Count - 1; j >= 0; j--)
                 {
-                    AfterImages[i].gameObject.SetActive(true);
-                    AfterImages[i].transform.position = History[j].Position;
-                    AfterImages[i].transform.rotation = History[j].Rotation;
-                    break;
-                }
-                else if (j == 0)
-                {
-                    AfterImages[i].gameObject.SetActive(false);
+                    if (History[j].Timestamp < perceivedTimestamp)
+                    {
+                        AfterImages[i].gameObject.SetActive(true);
+                        AfterImages[i].transform.position = History[j].Position;
+                        AfterImages[i].transform.rotation = History[j].Rotation;
+                        break;
+                    }
+                    else if (j == 0)
+                    {
+                        AfterImages[i].SetActive(false);
+                    }
                 }
             }
         }
     }
 
+    public void DestroyRelativistically()
+    {
+        isDestroyed = true;
+        destructionTimestamp = Time.time;
+        Visuals.gameObject.SetActive(false);
+    }
+    
     public GameObject GetAfterImageByLayerIndex(int layerIndex)
     {
         return AfterImages[layerIndex];
