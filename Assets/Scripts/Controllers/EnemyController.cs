@@ -7,18 +7,20 @@ public class EnemyController : AbstractController
 
     private GameObject perceivedTarget;
     
-    protected override void Awake()
+    void Start()
     {
-        base.Awake();
         perceivedTarget = Target.GetAfterImageByLayerIndex(PerceivedLayerIndex);
     }
     
-    protected override float Throttle => 1f;
+    protected override float Throttle => perceivedTarget.activeSelf ? 1f : 0f;
     
-    protected override Vector3 Direction => (perceivedTarget.transform.position - transform.position).normalized;
+    protected override Vector3 Direction => 
+        perceivedTarget.activeSelf 
+        ? (perceivedTarget.transform.position - transform.position).normalized
+        : transform.forward;
 
     protected override bool ShouldShoot =>
-        Vector3.Dot(
+        perceivedTarget.activeSelf && Vector3.Dot(
             transform.forward,
             (perceivedTarget.transform.position - transform.position).normalized
         ) > 0.75f;

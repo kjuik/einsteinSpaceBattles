@@ -39,6 +39,7 @@ public class RelativisticVisuals : MonoBehaviour
             );
             
             AfterImages.Add(newAfterImage);
+            newAfterImage.SetActive(false);
         }
     }
 
@@ -69,14 +70,14 @@ public class RelativisticVisuals : MonoBehaviour
             {
                 if (History[j].Timestamp < perceivedTimestamp)
                 {
-                    ToggleRenderers(AfterImages[i], true);
+                    AfterImages[i].gameObject.SetActive(true);
                     AfterImages[i].transform.position = History[j].Position;
                     AfterImages[i].transform.rotation = History[j].Rotation;
                     break;
                 }
                 else if (j == 0)
                 {
-                    ToggleRenderers(AfterImages[i], false);
+                    AfterImages[i].gameObject.SetActive(false);
                 }
             }
         }
