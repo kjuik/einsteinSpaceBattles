@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85050b566e3409b8106539aed5fd896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.4
+  speed: 0.75
   explosionPrefab: {fileID: 0}
 --- !u!135 &1554783070585259408
 SphereCollider:
