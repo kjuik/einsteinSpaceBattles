@@ -12,9 +12,7 @@ public class Projectile : MonoBehaviour
     
     void OnCollisionEnter(Collision other)
     {
-        //todo relativistic explosion!
-        var explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-        Destroy(explosion.gameObject, explosionPrefab.GetComponentInChildren<ParticleSystem>().main.duration);
+        Instantiate(explosionPrefab, transform.position, transform.rotation);
 
         var rv = GetComponentInChildren<RelativisticVisuals>();
         if (rv != null)

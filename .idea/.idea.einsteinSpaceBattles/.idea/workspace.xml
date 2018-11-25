@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf2f0a41-fc3d-4c31-af1d-15de10bb14ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.einsteinSpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.einsteinSpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.einsteinSpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.einsteinSpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ship.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Relativistics/PerceptionOverlay.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Relativistics/PerceptionOverlay.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticVisuals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticVisuals.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Relativistics/Relativistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Relativistics/Relativistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,13 +33,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="8045" />
+          <entry key="cs" value="8443" />
           <entry key="shader" value="267" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="8045" />
+          <entry key="C#" value="8443" />
           <entry key="ShaderLab" value="267" />
         </counts>
       </usages-collector>
@@ -47,13 +47,13 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="22" />
+          <entry key="C#" value="23" />
           <entry key="ShaderLab" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="22" />
+          <entry key="cs" value="23" />
           <entry key="shader" value="1" />
         </counts>
       </usages-collector>
@@ -61,16 +61,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="207">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
-                <marker date="1543179380815" expanded="true" signature="59:786" ph="{...}" />
-                <marker date="1543179380815" expanded="true" signature="174:260" ph="{...}" />
-                <marker date="1543179380815" expanded="true" signature="308:784" ph="{...}" />
-                <marker date="1543179380815" expanded="true" signature="647:749" ph="{...}" />
+                <marker date="1543181687546" expanded="true" signature="59:620" ph="{...}" />
+                <marker date="1543181687546" expanded="true" signature="174:260" ph="{...}" />
+                <marker date="1543181687546" expanded="true" signature="308:618" ph="{...}" />
+                <marker date="1543181687546" expanded="true" signature="481:583" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticParticleBurst.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+              <folding>
+                <marker date="1543184131564" expanded="true" signature="6:85" ph="..." />
+                <marker date="1543184131564" expanded="true" signature="141:2145" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="382:1110" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="468:639" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="699:1104" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="1161:1314" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="1252:1308" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="1333:2071" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="1351:1463" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="1491:1534" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="1586:2065" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="1828:1968" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="2000:2055" ph="{...}" />
+                <marker date="1543184131564" expanded="true" signature="2093:2143" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -109,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticVisuals.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <marker date="1543180660241" expanded="true" signature="6:71" ph="..." />
                 <marker date="1543180660241" expanded="true" signature="121:3301" ph="{...}" />
@@ -178,22 +203,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/PerceptionOverlay.shader">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-              <folding>
-                <marker date="1543052807475" expanded="true" signature="34:1376" ph="{...}" />
-                <marker date="1543052807475" expanded="true" signature="55:195" ph="{...}" />
-                <marker date="1543052807475" expanded="true" signature="214:1374" ph="{...}" />
-                <marker date="1543052807475" expanded="true" signature="310:1368" ph="{...}" />
-                <marker date="1543052807475" expanded="true" signature="333:1353" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/AbstractController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -230,6 +239,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Editor/TimeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/PlayerPerspectiveCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticParticleBurst.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/CameraOverlayEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/Relativistics.cs" root0="FORCE_HIGHLIGHTING" />
@@ -266,9 +276,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/AbstractController.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/TimeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Relativistics/Relativistics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticVisuals.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticParticleBurst.cs" />
       </list>
     </option>
   </component>
@@ -388,7 +399,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29408000" />
+    <option name="totallyTimeSpent" value="32421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,19 +455,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs</url>
-          <line>15</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" initialLine="15">
-            <startOffsets>
-              <option value="362" />
-            </startOffsets>
-            <endOffsets>
-              <option value="447" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -602,7 +600,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticVisuals.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
             <marker date="1543180660241" expanded="true" signature="6:71" ph="..." />
             <marker date="1543180660241" expanded="true" signature="121:3301" ph="{...}" />
@@ -629,13 +627,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="207">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <marker date="1543179380815" expanded="true" signature="59:786" ph="{...}" />
-            <marker date="1543179380815" expanded="true" signature="174:260" ph="{...}" />
-            <marker date="1543179380815" expanded="true" signature="308:784" ph="{...}" />
-            <marker date="1543179380815" expanded="true" signature="647:749" ph="{...}" />
+            <marker date="1543181687546" expanded="true" signature="59:620" ph="{...}" />
+            <marker date="1543181687546" expanded="true" signature="174:260" ph="{...}" />
+            <marker date="1543181687546" expanded="true" signature="308:618" ph="{...}" />
+            <marker date="1543181687546" expanded="true" signature="481:583" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Relativistics/RelativisticParticleBurst.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+          <folding>
+            <marker date="1543184131564" expanded="true" signature="6:85" ph="..." />
+            <marker date="1543184131564" expanded="true" signature="141:2145" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="382:1110" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="468:639" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="699:1104" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="1161:1314" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="1252:1308" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="1333:2071" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="1351:1463" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="1491:1534" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="1586:2065" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="1828:1968" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="2000:2055" ph="{...}" />
+            <marker date="1543184131564" expanded="true" signature="2093:2143" ph="{...}" />
           </folding>
         </state>
       </provider>
