@@ -83,29 +83,6 @@ public class RelativisticVisuals : MonoBehaviour
         }
     }
 
-    private void ToggleRenderers(GameObject afterImage, bool on)
-    {
-        afterImage.GetComponent<Renderer>().enabled = on;
-        foreach (var renderer in afterImage.GetComponentsInChildren<Renderer>())
-        {
-            renderer.enabled = on;
-        }
-        
-        foreach (var particles in 
-            afterImage.GetComponentsInChildren<ParticleSystem>()
-            .Concat(new List<ParticleSystem> { afterImage.GetComponent<ParticleSystem>() }))
-        {
-            if (particles == null)
-                continue;
-            
-            if (particles.isPlaying && !on)
-                particles.Pause();
-            
-            if (!particles.isPlaying && on)
-                particles.Play();            
-        }
-    }
-
     public GameObject GetAfterImageByLayerIndex(int layerIndex)
     {
         return AfterImages[layerIndex];
