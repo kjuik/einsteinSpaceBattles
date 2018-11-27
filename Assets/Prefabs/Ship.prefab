@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92d8b198c9f46c08764fdef3941fcdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2.5
+  Speed: 2
   SteeringStrength: 0.5
   exhaustParticles: {fileID: 9139607114589228586}
   particlesStrength: 10
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8668257956387346759, guid: d21cfacd7bbc416429428ca9691a013d,
     type: 3}
-  shotFrequency: 5
-  delay: 2
+  shotFrequency: 1
+  delay: 0
   muzzles:
   - {fileID: 1514985617882564719}
   - {fileID: 6390439618823469716}
@@ -171,7 +171,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2}
+  m_Size: {x: 0.5, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &9139607114589228586 stripped
 ParticleSystem:
@@ -286,15 +286,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 15157d0978134764bbf273b7ed1a67df, type: 2}
     - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 111078, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_Layer
@@ -403,7 +403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19833030, guid: ee25b75a5fe846546a9200c00355e509, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 19833030, guid: ee25b75a5fe846546a9200c00355e509, type: 3}
       propertyPath: simulationSpeed

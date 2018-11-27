@@ -68,17 +68,15 @@ public class RelativisticVisuals : MonoBehaviour
 
         for (var i = 0; i < Perceivers.Count; i++)
         {
-            var distance = Vector3.Distance(Visuals.transform.position, Perceivers[i].position);
-            var lightDelay = distance / Relativistics.C;
-            var perceivedTimestamp = Time.time - lightDelay;
-
-            if (isDestroyed && destructionTimestamp < perceivedTimestamp)
+            if (isDestroyed && destructionTimestamp < GetPerceivedTimestamp(Visuals.transform.position, i))
+            {
                 AfterImages[i].SetActive(false);
-            else if (AfterImages[i] != null)
+            }
+            else
             {
                 for (var j = History.Count - 1; j >= 0; j--)
                 {
-                    if (History[j].Timestamp < perceivedTimestamp)
+                    if (History[j].Timestamp < GetPerceivedTimestamp(History[j].Position, i))
                     {
                         AfterImages[i].gameObject.SetActive(true);
                         AfterImages[i].transform.position = History[j].Position;
@@ -92,6 +90,13 @@ public class RelativisticVisuals : MonoBehaviour
                 }
             }
         }
+    }
+
+    private float GetPerceivedTimestamp(Vector3 transformPosition, int perceiverIndex)
+    {
+        var distance = Vector3.Distance(transformPosition, Perceivers[perceiverIndex].position);
+        var lightDelay = distance / Relativistics.C;
+        return Time.time - lightDelay;
     }
 
     public void DestroyRelativistically()
