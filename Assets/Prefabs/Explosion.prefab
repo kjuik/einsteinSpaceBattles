@@ -160,5 +160,9 @@ PrefabInstance:
       propertyPath: autoRandomSeed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 19852154, guid: de750eb4aa86bba4eaef19c9a667af5b, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.33
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de750eb4aa86bba4eaef19c9a667af5b, type: 3}

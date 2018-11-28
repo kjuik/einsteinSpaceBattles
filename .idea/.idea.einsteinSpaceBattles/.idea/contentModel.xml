@@ -11,6 +11,9 @@
           <e p="Flames Of The Phoenix" t="Include">
             <e p="READ_ME.txt" t="Include" />
           </e>
+          <e p="Planet Earth Free" t="Include">
+            <e p="SpinFree.cs" t="Include" />
+          </e>
         </e>
         <e p="Editor" t="Include">
           <e p="TimeController.cs" t="Include" />
