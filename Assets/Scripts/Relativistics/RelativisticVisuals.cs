@@ -69,7 +69,6 @@ public class RelativisticVisuals : MonoBehaviour
             AfterImage.SetActive(true);
             AfterImage.transform.position = perceivedState.Value.Position;
             AfterImage.transform.rotation = perceivedState.Value.Rotation;
-
         }
         else
             AfterImage.SetActive(false);
@@ -83,7 +82,7 @@ public class RelativisticVisuals : MonoBehaviour
         {
             for (var j = History.Count - 1; j >= 0; j--)
             {
-                if (History[j].Timestamp < GetPerceivedTimestamp(History[j].Position, perceiverPosition))
+                if (History[j].Timestamp <= GetPerceivedTimestamp(History[j].Position, perceiverPosition))
                     return History[j];
             }
         }
