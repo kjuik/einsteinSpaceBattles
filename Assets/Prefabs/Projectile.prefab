@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a25885d78f1d04a812f5b2192d3678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Perceivers: []
+  Perceiver: {fileID: 0}
   Visuals: {fileID: 8971771849849350418}
 --- !u!1 &3308299598694626453
 GameObject:
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85050b566e3409b8106539aed5fd896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.8
   explosionPrefab: {fileID: 0}
 --- !u!135 &1554783070585259408
 SphereCollider:

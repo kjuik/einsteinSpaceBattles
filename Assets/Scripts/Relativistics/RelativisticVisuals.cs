@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class RelativisticVisuals : MonoBehaviour
@@ -11,10 +10,10 @@ public class RelativisticVisuals : MonoBehaviour
         public Quaternion Rotation;
     }
     
-    [SerializeField] List<Transform> Perceivers;
+    [SerializeField] Transform Perceiver;
     [SerializeField] GameObject Visuals;
 
-    private readonly List<GameObject> AfterImages = new List<GameObject>();
+    private GameObject AfterImage;
     private readonly List<HistoricalState> History = new List<HistoricalState>();
 
     private bool isDestroyed;
@@ -22,36 +21,33 @@ public class RelativisticVisuals : MonoBehaviour
     
     void Awake()
     {
-        if (Perceivers.Count == 0)
-        {
-            Perceivers.Add(FindObjectOfType<PlayerController>().transform);
-            Perceivers.Add(FindObjectOfType<EnemyController>().transform);
-        }
-        
-        for (var i = 0; i < Perceivers.Count; i++)
-        {
-            var newAfterImage = Instantiate(
-                Visuals,
-                Visuals.transform.position, 
-                Visuals.transform.rotation
-            );
-            SetLayer(
-                newAfterImage.transform, 
-                LayerMask.NameToLayer(Relativistics.PerceiverLayerNames[i])
-            );
-            
-            AfterImages.Add(newAfterImage);
-            newAfterImage.SetActive(false);
-        }
+        if (Perceiver == null)
+            Perceiver = FindObjectOfType<PlayerController>().transform;
+
+        CreateAfterImage();
+    }
+
+    private void CreateAfterImage()
+    {
+        AfterImage = Instantiate(
+            Visuals,
+            Visuals.transform.position,
+            Visuals.transform.rotation
+        );
+
+        SetLayer(
+            AfterImage.transform,
+            LayerMask.NameToLayer(Relativistics.PlayerPerceptionLayerName)
+        );
+
+        AfterImage.SetActive(false);
     }
 
     private void SetLayer(Transform o, int layer)
     {
         o.gameObject.layer = layer;
         foreach (Transform child in o.transform)
-        {
             SetLayer(child, layer);
-        }
     }
 
     void Update()
@@ -66,35 +62,40 @@ public class RelativisticVisuals : MonoBehaviour
             });
         }
 
-        for (var i = 0; i < Perceivers.Count; i++)
+        var perceivedState = GetStatePerceivedFrom(Perceiver.position);
+
+        if (perceivedState.HasValue)
         {
-            if (isDestroyed && destructionTimestamp < GetPerceivedTimestamp(Visuals.transform.position, i))
+            AfterImage.SetActive(true);
+            AfterImage.transform.position = perceivedState.Value.Position;
+            AfterImage.transform.rotation = perceivedState.Value.Rotation;
+
+        }
+        else
+            AfterImage.SetActive(false);
+    }
+    
+    private HistoricalState? GetStatePerceivedFrom(Vector3 perceiverPosition)
+    {
+        if (isDestroyed && destructionTimestamp < GetPerceivedTimestamp(transform.position, perceiverPosition))
+            return null;
+        else
+        {
+            for (var j = History.Count - 1; j >= 0; j--)
             {
-                AfterImages[i].SetActive(false);
-            }
-            else
-            {
-                for (var j = History.Count - 1; j >= 0; j--)
-                {
-                    if (History[j].Timestamp < GetPerceivedTimestamp(History[j].Position, i))
-                    {
-                        AfterImages[i].gameObject.SetActive(true);
-                        AfterImages[i].transform.position = History[j].Position;
-                        AfterImages[i].transform.rotation = History[j].Rotation;
-                        break;
-                    }
-                    else if (j == 0)
-                    {
-                        AfterImages[i].SetActive(false);
-                    }
-                }
+                if (History[j].Timestamp < GetPerceivedTimestamp(History[j].Position, perceiverPosition))
+                    return History[j];
             }
         }
+        return null;
     }
 
-    private float GetPerceivedTimestamp(Vector3 transformPosition, int perceiverIndex)
+    public Vector3? GetPositionPerceivedFrom(Vector3 perceiverPosition) => 
+        GetStatePerceivedFrom(perceiverPosition)?.Position;
+
+    private float GetPerceivedTimestamp(Vector3 transformPosition, Vector3 perceiverPosition)
     {
-        var distance = Vector3.Distance(transformPosition, Perceivers[perceiverIndex].position);
+        var distance = Vector3.Distance(transformPosition, perceiverPosition);
         var lightDelay = distance / Relativistics.C;
         return Time.time - lightDelay;
     }
@@ -105,14 +106,9 @@ public class RelativisticVisuals : MonoBehaviour
         destructionTimestamp = Time.time;
         Visuals.gameObject.SetActive(false);
     }
-    
-    public GameObject GetAfterImageByLayerIndex(int layerIndex)
-    {
-        return AfterImages[layerIndex];
-    }
-    
+
     void OnDestroy()
     {
-        AfterImages.ForEach(Destroy);
+        Destroy(AfterImage);
     }
 }

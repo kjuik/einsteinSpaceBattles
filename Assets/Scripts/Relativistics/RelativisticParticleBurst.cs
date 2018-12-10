@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class RelativisticParticleBurst : MonoBehaviour
 {   
-    [SerializeField] List<Transform> Perceivers;
+    [SerializeField] Transform Perceiver;
     [SerializeField] ParticleSystem Visuals;
 
-    private readonly List<ParticleSystem> AfterImages = new List<ParticleSystem>();
+    private ParticleSystem AfterImage;
 
     private float startTimestamp;
     
@@ -16,26 +16,18 @@ public class RelativisticParticleBurst : MonoBehaviour
     {
         startTimestamp = Time.time;
         
-        if (Perceivers.Count == 0)
-        {
-            Perceivers.Add(FindObjectOfType<PlayerController>().transform);
-            Perceivers.Add(FindObjectOfType<EnemyController>().transform);
-        }
-        
-        for (var i = 0; i < Perceivers.Count; i++)
-        {
-            var newAfterImage = Instantiate(
-                Visuals,
-                Visuals.transform.position, 
-                Visuals.transform.rotation
-            );
-            SetLayer(
-                newAfterImage.transform, 
-                LayerMask.NameToLayer(Relativistics.PerceiverLayerNames[i])
-            );
-            
-            AfterImages.Add(newAfterImage);
-        }
+        if (Perceiver == null)
+            Perceiver = FindObjectOfType<PlayerController>().transform;
+
+        AfterImage = Instantiate(
+            Visuals,
+            Visuals.transform.position, 
+            Visuals.transform.rotation
+        );
+        SetLayer(
+            AfterImage.transform, 
+            LayerMask.NameToLayer(Relativistics.PlayerPerceptionLayerName)
+        );            
     }
 
     private void SetLayer(Transform o, int layer)
@@ -58,25 +50,22 @@ public class RelativisticParticleBurst : MonoBehaviour
             // ignored
         }
 
-        for (var i = 0; i < Perceivers.Count; i++)
-        {
-            var distance = Vector3.Distance(Visuals.transform.position, Perceivers[i].position);
-            var lightDelay = distance / Relativistics.C;
-            var perceivedTimestamp = Time.time - lightDelay;
+        var distance = Vector3.Distance(Visuals.transform.position, Perceiver.position);
+        var lightDelay = distance / Relativistics.C;
+        var perceivedTimestamp = Time.time - lightDelay;
 
-            try
-            {
-                AfterImages[i].Simulate(Mathf.Clamp(perceivedTimestamp - startTimestamp, 0f, 10f), true, true);
-            }
-            catch (Exception e)
-            {
-                // ignored
-            }
+        try
+        {
+            AfterImage.Simulate(Mathf.Clamp(perceivedTimestamp - startTimestamp, 0f, 10f), true, true);
+        }
+        catch (Exception e)
+        {
+            // ignored
         }
     }
 
     void OnDestroy()
     {
-        AfterImages.ForEach(Destroy);
+        Destroy(AfterImage);
     }
 }
