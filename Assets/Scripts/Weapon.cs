@@ -4,7 +4,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     //todo pooling
-    [SerializeField] private Projectile projectilePrefab;
+    [SerializeField] private ProjectilePool projectilePool;
     [SerializeField] private float shotFrequency;
     [SerializeField] private float delay = 0f;
     [SerializeField] private List<Transform> muzzles;
@@ -29,9 +29,9 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(projectilePrefab, 
-                    muzzles[lastMuzzleIndex].position, 
-                    transform.rotation).transform.forward = transform.forward;
+        var projectile = projectilePool.Get();
+        projectile.transform.position = muzzles[lastMuzzleIndex].position;
+        projectile.transform.forward = transform.forward;
 
         lastShotTimestamp = Time.time;
         lastMuzzleIndex = (lastMuzzleIndex < muzzles.Count - 1)

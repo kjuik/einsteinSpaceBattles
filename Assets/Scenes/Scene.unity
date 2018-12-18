@@ -480,6 +480,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: dc289247befda284fa1a052188217b56, type: 2}
   perceiver: {fileID: 1398517989}
+--- !u!1 &657102906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657102908}
+  - component: {fileID: 657102907}
+  m_Layer: 0
+  m_Name: EnemyProjectilePool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &657102907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657102906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91fb851feb810e7438fd666403fea2a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProjectilePrefab: {fileID: 8668257956387346759, guid: b2ae4083034af994faf426a96112d2e2,
+    type: 3}
+--- !u!4 &657102908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657102906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2119384, y: -0.3315807, z: 5.0042987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146972197
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,11 +826,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1397833149891397146, guid: 9aff2a72eb861ac44bc204fc46c79911,
+    - target: {fileID: 366165940751932888, guid: 9aff2a72eb861ac44bc204fc46c79911,
         type: 3}
-      propertyPath: Speed
-      value: 1.8
-      objectReference: {fileID: 0}
+      propertyPath: projectilePool
+      value: 
+      objectReference: {fileID: 657102907}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aff2a72eb861ac44bc204fc46c79911, type: 3}
 --- !u!4 &1398517989 stripped
@@ -1056,11 +1101,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1129940310720417472, guid: a10bf2fe6561e5c478c7bd4c945c6858,
+    - target: {fileID: 1863543130217108738, guid: a10bf2fe6561e5c478c7bd4c945c6858,
         type: 3}
-      propertyPath: Speed
-      value: 1.8
-      objectReference: {fileID: 0}
+      propertyPath: projectilePool
+      value: 
+      objectReference: {fileID: 2052274641}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a10bf2fe6561e5c478c7bd4c945c6858, type: 3}
 --- !u!1 &1565526186
@@ -1201,3 +1246,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a25885d78f1d04a812f5b2192d3678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2052274640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2052274642}
+  - component: {fileID: 2052274641}
+  m_Layer: 0
+  m_Name: PlayerProjectilePool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2052274641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052274640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91fb851feb810e7438fd666403fea2a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProjectilePrefab: {fileID: 8668257956387346759, guid: d21cfacd7bbc416429428ca9691a013d,
+    type: 3}
+--- !u!4 &2052274642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052274640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2119384, y: -0.3315807, z: 5.0042987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
